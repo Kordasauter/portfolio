@@ -1,0 +1,91 @@
+@import '../../styles/utils/variable';
+
+.modal {
+	// z-index: 30;
+	padding: 20px;
+	position: absolute;
+	background-color: #ffffff;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	right: auto;
+	bottom: auto;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	border-radius: 15px;
+	border: solid $secondary-color 3px;
+	@media (max-width: 768px) {
+		margin-top: 60px;
+		top: 50%;
+
+		width: 100%;
+		max-height: calc(100% - 124px);
+		overflow: scroll;
+	}
+	.modalDiv {
+		border-radius: 15px;
+	}
+	h2 {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	h3,
+	h4 {
+		margin: 0px;
+	}
+	h4 {
+		text-align: center;
+	}
+	.modalBody {
+		display: flex;
+		// gap: 10px;
+		border-radius: 15px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+	.siteImg {
+		width: 49%;
+		object-fit: cover;
+		border-radius: 15px;
+		@media (max-width: 768px) {
+			align-self: center;
+			width: 100%;
+		}
+	}
+	.logoImg {
+		width: 50px;
+		// object-fit: cover;
+	}
+	.separationBar {
+		display: block;
+		width: 2%;
+		min-height: 80%;
+		border-left: 1px solid Gainsboro;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.description {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 49%;
+		gap: 10px;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+	.siteURLContainer {
+		text-align: center;
+	}
+	.closeButton {
+		position: absolute;
+		top: 17px;
+		right: 17px;
+		@media (max-width: 768px) {
+			top: 30px;
+			right: 30px;
+		}
+	}
+}

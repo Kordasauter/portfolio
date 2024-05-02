@@ -1,0 +1,24 @@
+@import '../../styles/utils/variable';
+.competence {
+	display: flex;
+	// flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+
+	img {
+		max-height: 50px;
+	}
+	.column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// max-width: 80%;
+		progress {
+			// block-size: auto;
+			// width: 100%;
+			@media (max-width: 768px) {
+				width: 80px;
+			}
+		}
+	}
+}

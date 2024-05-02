@@ -1,0 +1,72 @@
+[
+    {
+        "Nom": "HTML 5",
+        "Image": "HTML5",
+        "Note" : 80
+    },
+    {
+        "Nom": "CSS 3",
+        "Image": "CSS3",
+        "Note" : 70
+    },
+    {
+        "Nom": "Javascript",
+        "Image": "Javascript",
+        "Note" : 80
+    },
+    {
+        "Nom": "React",
+        "Image": "React",
+        "Note" : 80
+    },
+    {
+        "Nom": "Node.JS",
+        "Image": "NodeJS",
+        "Note" : 80
+    },
+    {
+        "Nom": "Mongo DB",
+        "Image": "MongoDB",
+        "Note" : 70
+    },
+    {
+        "Nom": "Sass",
+        "Image": "SASS",
+        "Note" : 60
+    },
+    {
+        "Nom": "Angular",
+        "Image": "ANGULAR",
+        "Note" : 50
+    },
+    {
+        "Nom": "TypeScript",
+        "Image": "TypeScript",
+        "Note" : 50
+    },
+    {
+        "Nom": "PHP",
+        "Image": "PHP",
+        "Note" : 40
+    },
+    {
+        "Nom": "SQL",
+        "Image": "SQL",
+        "Note" : 40
+    },
+    {
+        "Nom": "C#",
+        "Image": "CSharp",
+        "Note" : 30
+    },
+    {
+        "Nom": "ASP.NET",
+        "Image": "ASP.NET",
+        "Note" : 30
+    },
+    {
+        "Nom": "VueJS",
+        "Image": "VueJS",
+        "Note" : 30
+    }
+]
