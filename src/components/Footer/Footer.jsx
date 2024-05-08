@@ -7,7 +7,14 @@ import useOnScreen from '../../hooks/useOnScreen'
 import { useContext } from 'react'
 import { NavigationContext } from '../../context/context'
 
+//images
+import Github from '../../assets/images/github.png'
+import LinkedIn from '../../assets/images/linkedin.png'
+
 import './footer.scss'
+
+//test
+import { useLocation } from 'react-router-dom'
 
 const FooterContainer = styled.footer`
 	// border: solid black 1px;
@@ -25,20 +32,29 @@ function Footer(props) {
 	const isVisible = useOnScreen(footer)
 	const { setVisibility } = useContext(NavigationContext)
 
+	//test
+	const location = useLocation()
+	const { pathname } = location
+
 	useEffect(() => {
 		if (isVisible) setVisibility('Footer', true)
 		else setVisibility('Footer', false)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isVisible])
+
 	return (
-		<FooterContainer id='Footer' ref={footer}>
+		<footer
+			id='Footer'
+			ref={footer}
+			className={pathname === '/' ? '' : 'mobile'}
+		>
 			<a href='https://github.com/Kordasauter'>
-				<img src='./images/logos/github.png' alt='github' />
+				<img src={Github} alt='github' />
 			</a>
 			<a href='https://www.linkedin.com/in/mickael-vivens-83b98691/'>
-				<img src='./images/logos/linkedin.png' alt='linkedin' />
+				<img src={LinkedIn} alt='linkedin' />
 			</a>
-		</FooterContainer>
+		</footer>
 	)
 }
 

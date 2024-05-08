@@ -21,20 +21,21 @@ function WorkModal(props) {
 						alt={props.work.Title}
 					/>
 					<span className='separationBar' />
-					<div className='description'>
+					{/* <div className='description'> */}
+					<div className='descText'>
+						<h3>{props.work.Type}</h3>
+						<span>
+							{props.work.Description.map((text) => (
+								<span key={'desc' + key++}>
+									{text}
+									<br />
+								</span>
+							))}
+						</span>
+					</div>
+					<div className='descTech'>
+						<h3>Technologies utilisées</h3>
 						<div>
-							<h3>{props.work.Type}</h3>
-							<span>
-								{props.work.Description.map((text) => (
-									<span key={'desc' + key++}>
-										{text}
-										<br />
-									</span>
-								))}
-							</span>
-						</div>
-						<div>
-							<h3>Technologies utilisées</h3>
 							{props.work.Technologies.map((tech) => (
 								<img
 									className='logoImg'
@@ -45,15 +46,25 @@ function WorkModal(props) {
 							))}
 						</div>
 					</div>
-				</div>
-				<h4>Voir le site :</h4>
-				<div className='siteURLContainer'>
-					<a href={props.work.URL} target='_blank' rel='noreferrer'>
-						{props.work.Title}
-					</a>
+					{/* </div> */}
+					{/* </div> */}
+
+					<div className='siteURLContainer'>
+						<h4>Voir le site :</h4>
+						<div className='URL'>
+							<a
+								href={props.work.URL}
+								target='_blank'
+								rel='noreferrer'
+							>
+								{props.work.Title}{' '}
+								<i className='fa-solid fa-up-right-from-square'></i>
+							</a>
+						</div>
+					</div>
 				</div>
 				<span className='closeButton' onClick={props.closeModal}>
-					<i class='fa-solid fa-x'></i>
+					<i className='fa-solid fa-x'></i>
 				</span>
 			</div>
 		</Modal>

@@ -1,4 +1,4 @@
-@import '../../styles/utils/variable';
+@import '../../styles/utils/variables';
 #Contact {
 	width: 100%;
 
@@ -6,11 +6,16 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	gap: 20px;
 	background-color: $background-color;
 
 	background-image: url('https://www.transparenttextures.com/patterns/clean-textile.png');
 	box-shadow: lightgray 4px 4px 20px;
-	padding-bottom: 20px;
+
+	padding-top: 25px;
+	padding-bottom: 35px;
+	// padding-left: 50px;
+	// padding-right: 50px;
 
 	input[type='text'],
 	input[type='email'],
@@ -32,7 +37,7 @@
 		width: 100%;
 
 		// background-color: $primary-color;
-		background-color: $secondary-color;
+		background-color: $primary-color;
 		// background-color: blue;
 		color: white;
 		padding: 14px 20px;

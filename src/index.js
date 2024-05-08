@@ -10,6 +10,7 @@ import { NavigationProvider } from './context/context'
 
 //Pages
 import Index from './pages/Index/Index'
+import Work from './pages/Work/Work'
 
 import './index.css'
 
@@ -25,6 +26,7 @@ root.render(
 				<Banner />
 				<Routes>
 					<Route exact path='/' element={<Index />} />
+					<Route path='/work/:id' element={<Work />} />
 				</Routes>
 				<Footer />
 			</NavigationProvider>

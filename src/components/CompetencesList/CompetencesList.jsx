@@ -10,10 +10,8 @@ import './competencesList.scss'
 
 function CompetencesList(props) {
 	const Competences = useRef()
-	// const CompSection = useRef()
 	//test if Contact is visible
 	const isVisible = useOnScreen(Competences)
-	// const sectionIsVisible = useOnScreen(CompSection)
 
 	const { setVisibility } = useContext(NavigationContext)
 
@@ -22,38 +20,17 @@ function CompetencesList(props) {
 		else setVisibility('Competences', false)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isVisible])
-	// const { currentSection, changeSection, sectionSet } =
-	// 	useContext(NavigationContext)
-
-	// useEffect(() => {
-	// 	//mobile
-	// 	// if (window.innerWidth < 481) {
-	// 	// 	if (sectionIsVisible) {
-	// 	// 		sectionSet(1)
-	// 	// 	} else {
-	// 	// 		// if (currentSection === 1) changeSection('add')
-	// 	// 	}
-	// 	// } else {
-	// 	// 	if (isVisible) {
-	// 	// 		if (currentSection === 2) changeSection('subtract')
-	// 	// 	} else {
-	// 	// 		if (currentSection === 1) changeSection('add')
-	// 	// 	}
-	// 	// }
-
-	// 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	// }, [isVisible])
 
 	return (
 		<section id='Competences' ref={Competences}>
-			{/* <StyledDiv> */}
 			<h2>Competences</h2>
 			<div className='competencesContainer'>
+				{/* <div className='list'> */}
 				{competences.map((comp) => (
 					<Competence key={'key' + comp.Image} competence={comp} />
 				))}
+				{/* </div> */}
 			</div>
-			{/* </StyledDiv> */}
 		</section>
 	)
 }

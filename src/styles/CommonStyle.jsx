@@ -15,5 +15,6 @@ export const StyledH2 = styled.h2`
 	// box-shadow: lightgray 4px 4px 20px;
 	font-size: 34px;
 	font-weight: bold;
+	color: ${colors.primary};
 	// margin-top: 10px;
 `

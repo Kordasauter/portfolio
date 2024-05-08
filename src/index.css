@@ -33,16 +33,17 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
-/* h2 {
-  color: white;
+h2 {
+	text-transform: uppercase;
+	/* color: white;
   background-color: #191970;
   min-width: 150px;
   max-width: fit-content;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  border-radius: 60px ;
-} */
+  border-radius: 60px ; */
+}
 /* .active-scroll-spy {
 	border-bottom: 3px solid black;
 } */

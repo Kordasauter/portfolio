@@ -13,9 +13,16 @@ function Work(props) {
 	function closeModal() {
 		setIsOpen(false)
 	}
+	const redirect = () => {
+		window.location.href = '/work/' + props.work.id
+	}
+
 	return (
 		<div>
-			<div onClick={openModal} className='work'>
+			<div
+				onClick={window.innerWidth > 480 ? openModal : redirect}
+				className='work'
+			>
 				<img
 					src={'/images/Sites/' + props.work.Title + '.png'}
 					alt={props.work.Title}

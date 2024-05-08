@@ -1,11 +1,11 @@
-@import '../../styles/utils/variable';
+@import '../../styles/utils/variables';
 .work {
 	// width: 350px;
 	// height: 350px;
 	height: auto;
 	width: auto;
 	position: relative;
-	border: solid $secondary-color 2px;
+	border: solid $primary-color 2px;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
@@ -70,5 +70,5 @@
 // 	margin-right: -50%;
 // 	transform: translate(-50%, -50%);
 // 	border-radius: 15px;
-// 	border: solid $secondary-color 3px;
+// 	border: solid $primary-color 3px;
 // }

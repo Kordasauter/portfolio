@@ -1,76 +1,59 @@
 [
-    {
-        "Title" : "Booki",
-        "URL" : "https://kordasauter.github.io/BOOKI/",
-        "Type" : "Projet de formation",
-        "Description" : [
-            "La start-up Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
-            "Mon role à été de créer l'interface du site d'après une maquette Figma."
-        ],
-        "Technologies" : [
-            "HTML5",
-            "CSS3"
-        ]
-    },
-    {
-        "Title" : "SophieBluel",
-        "URL" : "https://kordasauter.github.io/Portfolio-architecte-sophie-bluel/",
-        "Type" : "Projet de formation",
-        "Description" : [
-            "L'architecte d'interieur Sophie Bluel à fait appel à nos services pour créer son portfolio.",
-            "Le site fait appel à une API pour obtenir la liste des travaux de l'architecte.",
-            "Mon role à été de créer des pages web dynamique."
-        ],
-        "Technologies" : [
-            "HTML5",
-            "CSS3",
-            "Javascript"
-        ]
-    },
-    {
-        "Title" : "NinaCarducci",
-        "URL" : "https://kordasauter.github.io/nina-carducci.github.io/",
-        "Type" : "Projet de formation",
-        "Description" : [
-            "Nina Carducci, une photographe, à fait appel à moi pour optimiser son site internet.",
-            "Mon role à été d'optimiser les performances de son site internet et d'en améliorer le référencement."
-        ],
-        "Technologies" : [
-            "HTML5",
-            "CSS3",
-            "Javascript"
-        ]
-    },
-    {
-        "Title" : "Kasa",
-        "URL" : "https://kordasauter.github.io/Kasa/",
-        "Type" : "Projet de formation",
-        "Description" : [
-            "Kasa, une entreprise de location d’appartements, à fait appel à mes services pour une refonte de son site internet.",
-            "Mon role à été de créer le front end du site internet et son routage en React."
-        ],
-        "Technologies" : [
-            "HTML5",
-            "CSS3",
-            "Javascript",
-            "React"
-        ]
-    },
-    {
-        "Title" : "MonVieuxGrimoire",
-        "URL" : "https://kordasauter.github.io/P7-Dev-Web-livres/",
-        "Type" : "Projet de formation",
-        "Description" : [
-            "Mon Vieux Grimoire a fait appel à mes services pour développer le back end de son site internet.",
-            "Le front end à été développé par un autre développeur.",
-            "Mon role à été de créer le back end du site internet, y compris la base de donnée (MongoDB)."
-        ],
-        "Technologies" : [
-            "HTML5",
-            "CSS3",
-            "Javascript",
-            "NodeJS",
-            "MongoDB"
-        ]
-    }
+	{
+		"id": 1,
+		"Title": "Booki",
+		"URL": "https://kordasauter.github.io/BOOKI/",
+		"Type": "Projet de formation",
+		"Description": [
+			"La start-up Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+			"Mon role à été de créer l'interface du site d'après une maquette Figma."
+		],
+		"Technologies": ["HTML5", "CSS3"]
+	},
+	{
+		"id": 2,
+		"Title": "SophieBluel",
+		"URL": "https://kordasauter.github.io/Portfolio-architecte-sophie-bluel/",
+		"Type": "Projet de formation",
+		"Description": [
+			"L'architecte d'interieur Sophie Bluel à fait appel à nos services pour créer son portfolio.",
+			"Le site fait appel à une API pour obtenir la liste des travaux de l'architecte.",
+			"Mon role à été de créer des pages web dynamique."
+		],
+		"Technologies": ["HTML5", "CSS3", "Javascript"]
+	},
+	{
+		"id": 3,
+		"Title": "NinaCarducci",
+		"URL": "https://kordasauter.github.io/nina-carducci.github.io/",
+		"Type": "Projet de formation",
+		"Description": [
+			"Nina Carducci, une photographe, à fait appel à moi pour optimiser son site internet.",
+			"Mon role à été d'optimiser les performances de son site internet et d'en améliorer le référencement."
+		],
+		"Technologies": ["HTML5", "CSS3", "Javascript"]
+	},
+	{
+		"id": 4,
+		"Title": "Kasa",
+		"URL": "https://kordasauter.github.io/Kasa/",
+		"Type": "Projet de formation",
+		"Description": [
+			"Kasa, une entreprise de location d’appartements, à fait appel à mes services pour une refonte de son site internet.",
+			"Mon role à été de créer le front end du site internet et son routage en React."
+		],
+		"Technologies": ["HTML5", "CSS3", "Javascript", "React"]
+	},
+	{
+		"id": 5,
+		"Title": "MonVieuxGrimoire",
+		"URL": "https://kordasauter.github.io/P7-Dev-Web-livres/",
+		"Type": "Projet de formation",
+		"Description": [
+			"Mon Vieux Grimoire a fait appel à mes services pour développer le back end de son site internet.",
+			"Le front end à été développé par un autre développeur.",
+			"Mon role à été de créer le back end du site internet, y compris la base de donnée (MongoDB)."
+		],
+		"Technologies": ["Javascript", "NodeJS", "MongoDB"]
+	}
 ]

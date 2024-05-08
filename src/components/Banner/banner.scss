@@ -1,13 +1,18 @@
-@import '../../styles/utils/variable';
+@import '../../styles/utils/variables';
 .banner {
 	.header {
 		max-width: 1440px;
 		margin: 0 auto;
+		padding-left: 50px;
+		padding-right: 50px;
 
 		display: flex;
 		align-items: center;
 
 		justify-content: space-between;
+		@media (max-width: 1024px) {
+			// flex-direction: column;
+		}
 		@media (max-width: 768px) {
 			flex-direction: column;
 		}
@@ -21,24 +26,56 @@
 	top: 0px;
 
 	h1 {
-		margin: 10px;
+		color: $primary-color;
+		margin: 10px 0;
+		@media (max-width: 1024px) {
+			font-size: x-large;
+			display: block;
+			flex-direction: column;
+		}
+		@media (max-width: 768px) {
+			font-size: xx-large;
+			display: block;
+			flex-direction: column;
+		}
+		@media (max-width: 320px) {
+			white-space: nowrap;
+		}
+		.Job {
+			@media (max-width: 480px) {
+				display: none;
+			}
+		}
 	}
 	ul {
-		margin: 10px;
-		padding: 0px;
+		padding: 10px;
+		margin: 0px;
 		list-style-type: none;
 		display: flex;
 		gap: 10px;
-		@media (max-width: 321px) {
+		@media (max-width: 480px) {
 			gap: 0;
 			margin: 0;
+			padding: 0;
+		}
+		@media (max-width: 320px) {
+			gap: 0;
+			margin: 0;
+			padding: 0;
 		}
 	}
 	li {
+		font-size: larger;
 		padding: 10px 5px;
 
 		.active {
-			border-bottom: 3px solid $secondary-color;
+			border-bottom: 3px solid $primary-color;
+		}
+		@media (max-width: 768px) {
+			font-size: xx-large;
+		}
+		@media (max-width: 480px) {
+			font-size: medium;
 		}
 		@media (max-width: 321px) {
 			padding: 0 2px;
@@ -48,6 +85,6 @@
 		color: $text-black;
 		text-decoration: none;
 		font-weight: 700;
-		color: $secondary-color;
+		color: $primary-color;
 	}
 }
