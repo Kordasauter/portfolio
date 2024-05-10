@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Modal from 'react-modal'
 
 import Banner from './components/Banner/Banner'
@@ -21,16 +21,16 @@ Modal.setAppElement('#root')
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<HashRouter>
 			<NavigationProvider>
 				<Banner />
 				<Routes>
-					<Route exact path='/portfolio/' element={<Index />} />
+					<Route exact path='/' element={<Index />} />
 					<Route path='/work/:id' element={<Work />} />
 				</Routes>
 				<Footer />
 			</NavigationProvider>
-		</BrowserRouter>
+		</HashRouter>
 	</React.StrictMode>
 )
 

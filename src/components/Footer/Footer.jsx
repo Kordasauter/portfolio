@@ -31,7 +31,7 @@ function Footer(props) {
 		<footer
 			id='Footer'
 			ref={footer}
-			className={pathname === '/portfolio/' ? '' : 'mobile'}
+			className={pathname === '/' ? '' : 'mobile'}
 		>
 			<a href='https://github.com/Kordasauter'>
 				<img src={Github} alt='github' />
