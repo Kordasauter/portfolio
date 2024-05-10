@@ -25,8 +25,8 @@ root.render(
 			<NavigationProvider>
 				<Banner />
 				<Routes>
-					<Route path='/portfolio/work/:id' element={<Work />} />
 					<Route exact path='/portfolio/' element={<Index />} />
+					<Route path='/work/:id' element={<Work />} />
 				</Routes>
 				<Footer />
 			</NavigationProvider>

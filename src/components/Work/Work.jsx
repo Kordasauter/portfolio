@@ -13,7 +13,7 @@ function Work(props) {
 		setIsOpen(false)
 	}
 	const redirect = () => {
-		window.location.href = '/portfolio/work/' + props.work.id
+		window.location.href = '/work/' + props.work.id
 	}
 
 	return (
