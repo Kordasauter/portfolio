@@ -24,7 +24,7 @@ function Work(props) {
 				className='work'
 			>
 				<img
-					src={'/images/Sites/' + props.work.Title + '.png'}
+					src={'/portfolio/images/Sites/' + props.work.Title + '.png'}
 					alt={props.work.Title}
 				/>
 				<p>{props.work.Title}</p>

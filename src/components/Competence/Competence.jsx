@@ -6,7 +6,9 @@ function Competence(props) {
 	return (
 		<div className='competence'>
 			<img
-				src={'/images/logos/' + props.competence.Image + '.png'}
+				src={
+					'/portfolio/images/logos/' + props.competence.Image + '.png'
+				}
 				alt={props.competence.Image + ' logo'}
 			/>
 			<div className='progressBarAndCertificat'>

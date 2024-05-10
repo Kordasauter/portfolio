@@ -8,9 +8,9 @@ import './work.scss'
 
 function Work(props) {
 	const param = useParams()
-	const location = useLocation()
+	// const location = useLocation()
 	const work = workList.find((work) => work.id === parseInt(param.id))
-	const { hash, pathname, search } = location
+	// const { hash, pathname, search } = location
 
 	// console.log(pathname)
 
@@ -29,7 +29,7 @@ function Work(props) {
 			<div className='pageBody'>
 				<img
 					className='SiteImage'
-					src={'/images/Sites/' + work.Title + '.png'}
+					src={'/portfolio/images/Sites/' + work.Title + '.png'}
 					alt={work.pictures}
 				/>
 				<div className='descText'>
@@ -49,7 +49,7 @@ function Work(props) {
 						{work.Technologies.map((tech) => (
 							<img
 								className='logoImg'
-								src={'/images/logos/' + tech + '.png'}
+								src={'/portfolio/images/logos/' + tech + '.png'}
 								key={'tech' + key++}
 								alt={'logo ' + tech}
 							/>

@@ -17,7 +17,11 @@ function WorkModal(props) {
 				<div className='modalBody'>
 					<img
 						className='siteImg'
-						src={'/images/Sites/' + props.work.Title + '.png'}
+						src={
+							'/portfolio/images/Sites/' +
+							props.work.Title +
+							'.png'
+						}
 						alt={props.work.Title}
 					/>
 					<span className='separationBar' />
@@ -39,7 +43,11 @@ function WorkModal(props) {
 							{props.work.Technologies.map((tech) => (
 								<img
 									className='logoImg'
-									src={'/images/logos/' + tech + '.png'}
+									src={
+										'/portfolio/images/logos/' +
+										tech +
+										'.png'
+									}
 									key={'tech' + key++}
 									alt={'logo ' + tech}
 								/>
