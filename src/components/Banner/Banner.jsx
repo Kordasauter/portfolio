@@ -20,7 +20,7 @@ function Banner(props) {
 					Mickaël VIVENS
 					<span className='Job'> - Développeur Web</span>
 				</h1>
-				{pathname === '/' ? (
+				{pathname === '/portfolio/' ? (
 					<nav>
 						<ul>
 							<li>

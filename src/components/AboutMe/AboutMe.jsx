@@ -25,8 +25,8 @@ function AboutMe(props) {
 					<p>
 						J'ai toujours développé pour le plaisir, mais après près
 						de 8 ans dans l'administration système et réseau, j'ai
-						eu l'opportunité de me spécialisé dans le développement
-						web. C'est pourquoi j'ai suivi une formation qui m'aura
+						eu l'opportunité de me spécialiser dans le développement
+						web. C'est pourquoi j'ai suivi une formation qui m'a
 						permis de parfaire toutes les compétences nécessaire à
 						ce type de poste.
 					</p>

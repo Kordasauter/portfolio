@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import workList from '../../datas/Works.json'
 
@@ -15,9 +15,9 @@ function Work(props) {
 		<div id='WorkPage'>
 			<div className='pageHeader'>
 				<h2>{work.Title}</h2>
-				<a className='closeButton' href='../../#Works'>
+				<Link className='closeButton' to={'/portfolio/#Works'}>
 					<i className='fa-solid fa-x'></i>
-				</a>
+				</Link>
 			</div>
 			<div className='pageBody'>
 				<img

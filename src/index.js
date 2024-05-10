@@ -21,16 +21,18 @@ Modal.setAppElement('#root')
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<React.StrictMode>
-		<HashRouter>
+		{/* <HashRouter> */}
+		<BrowserRouter>
 			<NavigationProvider>
 				<Banner />
 				<Routes>
-					<Route exact path='/' element={<Index />} />
+					<Route exact path='/portfolio/' element={<Index />} />
 					<Route path='/work/:id' element={<Work />} />
 				</Routes>
 				<Footer />
 			</NavigationProvider>
-		</HashRouter>
+		</BrowserRouter>
+		{/* </HashRouter> */}
 	</React.StrictMode>
 )
 

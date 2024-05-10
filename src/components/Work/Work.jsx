@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkModal from '../WorkModal/WorkModal'
+import { Link } from 'react-router-dom'
 
 import './work.scss'
 
@@ -18,16 +19,32 @@ function Work(props) {
 
 	return (
 		<div>
-			<div
-				onClick={window.innerWidth > 480 ? openModal : redirect}
-				className='work'
-			>
-				<img
-					src={'/portfolio/images/Sites/' + props.work.Title + '.png'}
-					alt={props.work.Title}
-				/>
-				<p>{props.work.Title}</p>
-			</div>
+			{window.innerWidth > 480 ? (
+				<div onClick={openModal} className='work'>
+					<img
+						src={
+							'/portfolio/images/Sites/' +
+							props.work.Title +
+							'.png'
+						}
+						alt={props.work.Title}
+					/>
+					<p>{props.work.Title}</p>
+				</div>
+			) : (
+				<Link to={'/work/' + props.work.id} className='work'>
+					<img
+						src={
+							'/portfolio/images/Sites/' +
+							props.work.Title +
+							'.png'
+						}
+						alt={props.work.Title}
+					/>
+					<p>{props.work.Title}</p>
+				</Link>
+			)}
+
 			<WorkModal
 				work={props.work}
 				closeModal={closeModal}
