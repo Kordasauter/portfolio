@@ -13,9 +13,6 @@ function Work(props) {
 	function closeModal() {
 		setIsOpen(false)
 	}
-	const redirect = () => {
-		window.location.href = '/portfolio/work/' + props.work.id
-	}
 
 	return (
 		<div>

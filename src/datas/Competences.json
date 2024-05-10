@@ -57,7 +57,7 @@
 	},
 	{
 		"Nom": "Angular",
-		"Image": "ANGULAR",
+		"Image": "Angular",
 		"Note": 50,
 		"Organisme": "OpenClassrooms",
 		"isParcours": false,

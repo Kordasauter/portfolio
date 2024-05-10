@@ -8,12 +8,12 @@ import Contact from '../../components/Contact/Contact'
 
 function Index(props) {
 	return (
-		<div>
+		<main>
 			<AboutMe />
 			<CompetencesList />
 			<WorksList />
 			<Contact />
-		</div>
+		</main>
 	)
 }
 
