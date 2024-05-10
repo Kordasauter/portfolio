@@ -25,11 +25,9 @@ function CompetencesList(props) {
 		<section id='Competences' ref={Competences}>
 			<h2>Competences</h2>
 			<div className='competencesContainer'>
-				{/* <div className='list'> */}
 				{competences.map((comp) => (
 					<Competence key={'key' + comp.Image} competence={comp} />
 				))}
-				{/* </div> */}
 			</div>
 		</section>
 	)

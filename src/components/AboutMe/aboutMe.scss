@@ -2,37 +2,30 @@
 #Description {
 	display: flex;
 	justify-content: center;
+	h2 {
+		font-size: 34px;
+		font-weight: bold;
+		color: $primary-color;
+	}
 
 	.aboutMeContainer {
 		max-width: 1440px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		// padding-left: 50px;
-		// padding-right: 50px;
 
 		padding: 100px 50px;
 
 		@media (max-width: 1024px) {
 			padding: 50px 50px;
 		}
-		@media (max-width: 768px) {
-			// justify-content: space-around;
-			// padding: 50px 0px;
-		}
 		@media (max-width: 480px) {
-			// display: flex;
 			flex-direction: column;
 			gap: 50px;
-			// align-items: center;
-			// max-width: 100%;
 			height: auto;
 			padding: 0;
 			padding-bottom: 50px;
 		}
-		// @media (max-width: 320px) {
-		// 	padding-bottom: 50px;
-		// }
 		.DescriptionContainer {
 			max-width: 50%;
 			@media (max-width: 768px) {
@@ -46,23 +39,15 @@
 			}
 			h2 {
 				@media (max-width: 480px) {
-					// text-align: start;
-					// width: 100%;
 					padding-left: 10px;
 					align-self: center;
 					white-space: nowrap;
 				}
-				// @media (max-width: 320px) {
-				// 	white-space: nowrap;
-				// }
 			}
 			p {
-				// margin: 0 20px;
 				padding: 0 20px;
 				color: $primary-color;
 				font-weight: 700;
-				// font-size: large;
-				// font-size: larger;
 				font-size: x-large;
 				border-left: solid 3px $primary-color;
 				@media (max-width: 480px) {
@@ -90,12 +75,8 @@
 				justify-content: center;
 				border-radius: 300px;
 				overflow: hidden;
-				// padding: 15px;
-				// border-radius: 30px;
-				// background-color: ${colors.backgroundLight};
 				box-shadow: lightgray 4px 4px 20px;
 				@media (max-width: 768px) {
-					// display: none;
 					height: 300px;
 					width: 225px;
 				}

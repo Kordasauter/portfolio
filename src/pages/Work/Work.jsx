@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import workList from '../../datas/Works.json'
 
@@ -8,21 +8,14 @@ import './work.scss'
 
 function Work(props) {
 	const param = useParams()
-	// const location = useLocation()
 	const work = workList.find((work) => work.id === parseInt(param.id))
-	// const { hash, pathname, search } = location
-
-	// console.log(pathname)
 
 	let key = 0
 	return (
 		<div id='WorkPage'>
 			<div className='pageHeader'>
 				<h2>{work.Title}</h2>
-				<a
-					className='closeButton'
-					href='../../#Works' /* onClick={props.closeModal}*/
-				>
+				<a className='closeButton' href='../../#Works'>
 					<i className='fa-solid fa-x'></i>
 				</a>
 			</div>

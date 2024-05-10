@@ -1,12 +1,10 @@
 import React from 'react'
-// import Scrollspy from 'react-scrollspy'
 
 import { useContext } from 'react'
 import { NavigationContext } from '../../context/context'
 
 import './banner.scss'
 
-//test
 import { useLocation } from 'react-router-dom'
 
 function Banner(props) {

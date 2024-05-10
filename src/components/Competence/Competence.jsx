@@ -26,7 +26,6 @@ function Competence(props) {
 							)}
 							<span>{props.competence.Organisme}</span>
 						</div>
-						{/* <span className='separation'>-</span> */}
 						<span className='certificatText'>
 							{props.competence.Certificat}
 						</span>

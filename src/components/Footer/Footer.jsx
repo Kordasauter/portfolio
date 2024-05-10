@@ -1,8 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 
-import colors from '../../styles/colors'
-import styled from 'styled-components'
-
 import useOnScreen from '../../hooks/useOnScreen'
 import { useContext } from 'react'
 import { NavigationContext } from '../../context/context'
@@ -13,18 +10,7 @@ import LinkedIn from '../../assets/images/linkedin.png'
 
 import './footer.scss'
 
-//test
 import { useLocation } from 'react-router-dom'
-
-const FooterContainer = styled.footer`
-	// border: solid black 1px;
-	width: 100%;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: ${colors.backgroundLight};
-`
 
 function Footer(props) {
 	const footer = useRef()
@@ -32,7 +18,6 @@ function Footer(props) {
 	const isVisible = useOnScreen(footer)
 	const { setVisibility } = useContext(NavigationContext)
 
-	//test
 	const location = useLocation()
 	const { pathname } = location
 

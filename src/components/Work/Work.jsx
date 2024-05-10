@@ -1,5 +1,4 @@
 import React from 'react'
-
 import WorkModal from '../WorkModal/WorkModal'
 
 import './work.scss'

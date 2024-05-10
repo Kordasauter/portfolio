@@ -9,7 +9,6 @@ import useOnScreen from '../../hooks/useOnScreen'
 //context for nav bar
 import { NavigationContext } from '../../context/context'
 
-import { StyledH2 } from '../../styles/CommonStyle'
 import './worksList.scss'
 
 function WorksList(props) {
@@ -25,7 +24,7 @@ function WorksList(props) {
 
 	return (
 		<section id='Works' ref={worksRef}>
-			<StyledH2>Travaux</StyledH2>
+			<h2>Travaux</h2>
 
 			<div className='sites'>
 				{works.map((work) => (

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { StyledH2 } from '../../styles/CommonStyle'
 
 import useOnScreen from '../../hooks/useOnScreen'
 import { useContext } from 'react'
@@ -14,17 +13,15 @@ function AboutMe(props) {
 	const { setVisibility } = useContext(NavigationContext)
 
 	useEffect(() => {
-		// console.log(isVisible)
 		if (isVisible) setVisibility('AboutMe', true)
 		else setVisibility('AboutMe', false)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isVisible])
 	return (
-		// <ScrollSpy>
 		<section id='Description' ref={aboutMe}>
 			<div className='aboutMeContainer'>
 				<div className='DescriptionContainer'>
-					<StyledH2>À PROPOS DE MOI</StyledH2>
+					<h2>À PROPOS DE MOI</h2>
 					<p>
 						J'ai toujours développé pour le plaisir, mais après près
 						de 8 ans dans l'administration système et réseau, j'ai
@@ -48,7 +45,6 @@ function AboutMe(props) {
 				</div>
 			</div>
 		</section>
-		// {/* </ScrollSpy> */}
 	)
 }
 

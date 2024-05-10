@@ -1,7 +1,5 @@
 @import '../../styles/utils/variables';
 .work {
-	// width: 350px;
-	// height: 350px;
 	height: auto;
 	width: auto;
 	position: relative;
@@ -11,14 +9,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	// @media (max-width: 1250px) {
-	// 	// height: 250px;
-	// 	// width: 250px;
-	// }
-	// @media (max-width: 900px) {
-	// 	height: auto;
-	// 	width: auto;
-	// }
 	&:after {
 		z-index: -1;
 		display: block;
@@ -30,7 +20,6 @@
 			#00000080 100%
 		);
 		margin-top: -150px;
-		// height: 150px;
 		height: 150px;
 		width: 100%;
 		content: '';
@@ -58,17 +47,3 @@
 		color: #ffffff;
 	}
 }
-// .modal {
-// 	padding: 20px;
-// 	position: absolute;
-// 	background-color: #ffffff;
-// 	width: 50%;
-// 	top: 50%;
-// 	left: 50%;
-// 	right: auto;
-// 	bottom: auto;
-// 	margin-right: -50%;
-// 	transform: translate(-50%, -50%);
-// 	border-radius: 15px;
-// 	border: solid $primary-color 3px;
-// }

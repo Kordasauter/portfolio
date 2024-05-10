@@ -1,13 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { StyledH2 } from '../../styles/CommonStyle'
 import './contact.scss'
 
 import useOnScreen from '../../hooks/useOnScreen'
 import { useContext } from 'react'
 import { NavigationContext } from '../../context/context'
-
-// import ScrollSpy from 'react-ui-scrollspy'
 
 function Contact(props) {
 	//send e mail
@@ -36,23 +33,14 @@ function Contact(props) {
 		else setVisibility('Contact', false)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isVisible])
-	// const { currentSection, changeSection } = useContext(NavigationContext)
-
-	// useEffect(() => {
-	// 	if (isVisible) {
-	// 	} else if (currentSection === 3) changeSection('subtract')
-	// 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	// }, [isVisible])
 
 	return (
-		// <ScrollSpy>
 		<section id='Contact' ref={form}>
-			<StyledH2>CONTACT</StyledH2>
+			<h2>CONTACT</h2>
 			<form onSubmit={sendEmail}>
 				<div className='nameMail'>
 					<div className='smallInput'>
 						<label>Nom</label>
-						{/* <input type="text" name="user_name" /> */}
 						<input type='text' name='from_name' />
 					</div>
 
@@ -68,7 +56,6 @@ function Contact(props) {
 				<input type='submit' value='Envoyer' />
 			</form>
 		</section>
-		// {/* </ScrollSpy> */}
 	)
 }
 

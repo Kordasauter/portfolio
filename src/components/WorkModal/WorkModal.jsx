@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Modal from 'react-modal'
 
 import './workModal.scss'
@@ -25,7 +24,6 @@ function WorkModal(props) {
 						alt={props.work.Title}
 					/>
 					<span className='separationBar' />
-					{/* <div className='description'> */}
 					<div className='descText'>
 						<h3>{props.work.Type}</h3>
 						<span>
@@ -54,8 +52,6 @@ function WorkModal(props) {
 							))}
 						</div>
 					</div>
-					{/* </div> */}
-					{/* </div> */}
 
 					<div className='siteURLContainer'>
 						<h4>Voir le site :</h4>
