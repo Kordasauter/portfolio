@@ -27,7 +27,7 @@ function AboutMe(props) {
 						de 8 ans dans l'administration système et réseau, j'ai
 						eu l'opportunité de me spécialiser dans le développement
 						web. C'est pourquoi j'ai suivi une formation qui m'a
-						permis de parfaire toutes les compétences nécessaire à
+						permis de parfaire toutes les compétences nécessaires à
 						ce type de poste.
 					</p>
 				</div>
@@ -40,7 +40,7 @@ function AboutMe(props) {
 						download='CV_Vivens_Mickael'
 						className='CV'
 					>
-						Telecharger mon CV
+						Télécharger mon CV
 					</a>
 				</div>
 			</div>

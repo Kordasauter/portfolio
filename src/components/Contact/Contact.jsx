@@ -43,9 +43,7 @@ function Contact(props) {
 		else setVisibility('Contact', false)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isVisible])
-	useEffect(() => {
-		console.log(success)
-	}, [success, fail])
+	useEffect(() => {}, [success, fail])
 
 	return (
 		<section id='Contact' ref={contact}>
