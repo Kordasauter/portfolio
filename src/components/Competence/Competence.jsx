@@ -11,7 +11,7 @@ function Competence(props) {
 				}
 				alt={props.competence.Image + ' logo'}
 			/>
-			<div className='progressBarAndCertificat'>
+			{/* <div className='progressBarAndCertificat'>
 				<div className='progressBar'>
 					<progress max='100' value={props.competence.Note} />
 				</div>
@@ -33,7 +33,7 @@ function Competence(props) {
 				) : (
 					<div className='certificat'>Autodidacte</div>
 				)}
-			</div>
+			</div> */}
 		</div>
 	)
 }
